@@ -1,0 +1,33 @@
+[{
+    "id": 1,
+    "name": "VMware Support",
+    "description": "Includes support for vCenter and ESXi hosts",
+    "categoryId": 1,
+    "typeId": 1,
+    "vendorId": 1,
+    "notes": "This time we are not renewing the SRM portion of the contract, nor the DR hosts and vCenter. Only the Edison ESXi hosts (7) and vCenter server.",
+    "createDate": "2019-03-01T10:40:10",
+    "expirationDate": "2020-04-01T00:00:00"
+},
+{
+    "id": 2,
+    "name": "Cisco Support",
+    "description": "Includes support for routers, switches, and the phone system (CUCM, CUC, UCCX)",
+    "categoryId": 2,
+    "typeId": 2,
+    "vendorId": 2,
+    "notes": "There are many contracts that are associated with these renewals",
+    "createDate": "2019-03-01T10:40:10",
+    "expirationDate": "2020-09-30T00:00:00"
+},
+{
+    "id": 3,
+    "name": "Barracuda Support",
+    "description": "Includes support for 1 remaining device",
+    "categoryId": 3,
+    "typeId": 3,
+    "vendorId": 3,
+    "notes": "Should not be renewed",
+    "createDate": "2019-03-01T12:40:10",
+    "expirationDate": "2020-05-30T00:00:00"
+}]

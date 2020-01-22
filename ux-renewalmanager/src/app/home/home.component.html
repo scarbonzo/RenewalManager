@@ -1,0 +1,15 @@
+<mat-grid-list cols="4">
+    <mat-grid-tile [colspan]="1">
+        <mat-action-list>
+            <mat-list-item *ngFor="let renewal of renewals" (click)="select(renewal)"> {{renewal.name}} </mat-list-item>
+        </mat-action-list>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3">
+        <div *ngIf="selectedRenewalId">
+            <app-renewaldetails [renewal]="selectedRenewal"></app-renewaldetails>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+
+
