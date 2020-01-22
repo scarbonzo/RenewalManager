@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   }
 
   select(value) {
-    this.selectedRenewal = value
+    this.selectedRenewal = value;
     this.selectedRenewalId = value.id;
   }
 

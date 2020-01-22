@@ -5,4 +5,17 @@
     <mat-form-field class="full-width">
         <input matInput placeholder="Description..." name="description" [(ngModel)]="renewal_.description" (input)="update()">
     </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Notes..." name="notes" [(ngModel)]="renewal_.notes" (input)="update()">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput  name="created" [matDatepicker]="createdPicker" [(ngModel)]="renewal_.createDate" (dateChange)="changeEvent($event)" placeholder="Created Date..." required>
+        <mat-datepicker-toggle matSuffix [for]="createdPicker"></mat-datepicker-toggle>
+        <mat-datepicker #createdPicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput  name="exipration" [matDatepicker]="expirationPicker" [(ngModel)]="renewal_.expirationDate" (dateChange)="changeEvent($event)" placeholder="Exipration Date..." required>
+        <mat-datepicker-toggle matSuffix [for]="expirationPicker"></mat-datepicker-toggle>
+        <mat-datepicker #expirationPicker></mat-datepicker>
+    </mat-form-field>
 </form>

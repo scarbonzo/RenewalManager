@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   sendEmail() {
     window.location.assign('mailto:reodice@lsnj.org');
   }

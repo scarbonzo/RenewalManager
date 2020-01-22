@@ -5,9 +5,7 @@
         </mat-action-list>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="3">
-        <div *ngIf="selectedRenewalId">
-            <app-renewaldetails [renewal]="selectedRenewal"></app-renewaldetails>
-        </div>
+        <app-renewaldetails *ngIf="selectedRenewalId" [renewal]="selectedRenewal"></app-renewaldetails>
     </mat-grid-tile>
 </mat-grid-list>
 
